@@ -11,8 +11,6 @@
    * 10K resistor attached to pin 40 & 41 from ground
    
    */
-  //LCD SECTION
-  #include <LiquidCrystal.h>
   
 
   
@@ -51,8 +49,6 @@
       // turn solenoid on:    
       digitalWrite(solPin, LOW); 
       digitalWrite(ignition, LOW); 
-     lcd.setCursor(0,1);           // set cursor to column 0, row 1
-    lcd.print("Shifting Up"); 
     delay(del); //delay for 100 ms
     } 
     else {
@@ -65,8 +61,6 @@
       // turn solenoid on:    
       digitalWrite(solPin2, LOW); 
       digitalWrite(ignition, LOW); 
-      lcd.setCursor(0,1);           // set cursor to column 0, row 1
-    lcd.print("Shifting Down");
     delay(del); //delay for 100 ms
     } 
     else {
